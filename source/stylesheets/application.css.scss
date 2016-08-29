@@ -26,3 +26,28 @@ article {
   height: 10rem;
   object-fit: cover;
 }
+
+.detail {
+
+  .images {
+    max-width: 40rem;
+  }
+
+  img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    margin: inherit auto;
+  }
+
+  .button {
+    display: block;
+    width: 12rem;
+    text-decoration: none;
+    text-align: center;
+
+    &:visited {
+      color: $color;
+    }
+  }
+}

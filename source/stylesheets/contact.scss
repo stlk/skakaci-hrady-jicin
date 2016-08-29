@@ -46,7 +46,6 @@ form input[type=text] {
   font-size: 1.125rem;
   line-height: 2em;
   padding: .3em .75em .3em;
-  width: 18.75rem;
   max-width: 100%;
   transition: background .3s ease;
 }
@@ -59,19 +58,24 @@ form input[type=text] {
   z-index: 2;
   width: 1.25rem;
   height: 1.25rem;
-  background: url('../images/drop_arrow.min.svg') center no-repeat;
+  background: url('/images/drop_arrow.min.svg') center no-repeat;
   opacity: .8;
   pointer-events: none;
-  display: none;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-form input[type=submit] {
+form input[type=submit], .button {
   font-size: 1rem;
   padding: 0.5em 1em;
   border: none;
   border-radius: 0.2rem;
-  background: #c6ec00;
+  background: $action-color;
   color: $color;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background: darken($action-color, 5%);
+  }
 }

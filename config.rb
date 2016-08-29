@@ -32,11 +32,14 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def photos(slug)
+    Dir["source/images/atrakce/#{slug}_*"].map do |i|
+      i.slice! "source"
+      i
+    end
+  end
+end
 
 # Build-specific configuration
 configure :build do

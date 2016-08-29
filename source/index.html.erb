@@ -7,32 +7,22 @@ title: Skákací hrady Jičín
     <h2><%= link_to item.name, "/atrakce/#{item.slug}" %></h2>
     <p><%= item.description %></p>
     <div class="preview">
-      <% item.photos.each do |photo| %>
+      <% photos(item.photos_slug).each do |photo| %>
       <img src="<%= photo %>" />
       <% end %>
     </div>
   </article>
 <% end %>
 
-<section id="cenik">
-  <h2>Ceník</h2>
-  <p>Cena jednodenního půjčovného je <strong>1 500,-</strong> bez dovozu, s dovozem (do 10 km) <strong>1 800,-</strong>, ceny jsou uvedeny bez DPH.</p>
-  <p>Chcete-li se bavit celý víkend, máte od nás druhý den za polovinu! Při zapůjčení obou atrakcí současně, máte od nás půjčovné na druhou atrakci s 50% slevou.</p>
-</section>
+<article id="o-nas">
+  <h2>O nás</h2>
+  <p></p>
+</article>
 
-<section id="kontakt">
+<article id="kontakt">
   <h2>Kontakt</h2>
-  <form class="contact_form" method="post" action="https://formspree.io/josef.rousek@gmail.com" accept-charset="UTF-8">
-    <input type="hidden" name="_next" value="/">
-    <input type="hidden" name="_subject" value="Skákací hrady: nová poptávka">
-    <p class="large">Jmenuji se <input type="text" name="jmeno" id="jmeno" placeholder="Vaše jméno">.
-    Chci si půjčit atrakci
-    <span class="select_contain small">
-      <select name="skluzavka">
-        <option value="--">--</option>
-        <option value="Skluzavka s lezeckou stěnou">Skluzavka s lezeckou stěnou</option>
-      </select>
-    </span> na datum <input type="text" name="termin" id="termin" placeholder="Datum">. Můj telefon je <input type="text" id="telefon" name="telefon" placeholder="Telefon">.</p>
-    <input type="submit" value="Odeslat poptávku">
-  </form>
-</section>
+  <p>
+    Jana Fišerová<br />
+    608 05 05 53
+  </p>
+</article>

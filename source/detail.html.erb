@@ -1,10 +1,20 @@
 
-<article>
+<article class="detail">
   <h2><%= atrakce.name %></h2>
   <p><%= atrakce.description %></p>
-  <div>
-    <% atrakce.photos.each do |photo| %>
-    <img src="<%= photo %>" />
+
+  <a class="button" href="#order">Chci si zaskákat</a>
+
+  <div class="images">
+    <% photos(atrakce.photos_slug).each do |photo| %>
+      <img src="<%= photo %>" />
     <% end %>
   </div>
+
+  <%= partial "cenik_#{atrakce.pricelist}" %>
 </article>
+
+<section>
+  <h2 id="order">Objednávka</h2>
+  <%= partial "formular" %>
+</section>
