@@ -1,0 +1,21 @@
+@import "gutenberg";
+
+@import "variables";
+@import "navigation";
+@import "contact";
+
+
+body, html {
+  color: $color;
+  height: 100%;
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}

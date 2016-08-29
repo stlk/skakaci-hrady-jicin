@@ -1,0 +1,114 @@
+@import "variables";
+
+$navigation-color-hover: black;
+$navigation-padding: 2em;
+$navigation-height: 60px;
+$horizontal-bar-mode: $large-screen;
+
+header.navigation {
+  margin-top: $navigation-padding;
+  margin-bottom: $navigation-padding;
+  min-height: $navigation-height;
+  width: 100%;
+  z-index: 999;
+
+  h1 {
+    margin: 0;
+    line-height: $navigation-height;
+    font-size: 3rem;
+    float: left;
+  }
+
+  // Mobile view
+
+  .navigation-menu-button {
+    display: block;
+    float: right;
+    line-height: $navigation-height;
+    margin: 0;
+    padding-right: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media (min-width: $horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $navigation-color-hover;
+    }
+  }
+
+  // Nav menu
+
+  nav {
+    float: none;
+    min-height: $navigation-height;
+    z-index: 9999999;
+
+    @media (min-width: $horizontal-bar-mode) {
+      float: right;
+    }
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+
+    &.show {
+      display: block;
+    }
+
+    @media (min-width: $horizontal-bar-mode) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  // The nav items
+
+  ul li.nav-link {
+    display: block;
+    line-height: $navigation-height;
+    overflow: hidden;
+    padding-right: 0.8em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+
+    @media (min-width: $horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $navigation-height;
+      text-decoration: none;
+      width: auto;
+    }
+
+    a {
+      color: $color;
+      display: inline-block;
+      text-decoration: none;
+
+      @media (min-width: $horizontal-bar-mode) {
+        padding-right: 1em;
+      }
+
+      &:focus,
+      &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+  }
+
+  .active-nav-item a {
+    border-bottom: 1px solid $navigation-color-hover;
+    padding-bottom: 3px;
+  }
+}
