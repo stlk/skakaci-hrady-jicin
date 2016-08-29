@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title><%= current_page.data.title || "Skákací hrady Jičín" %></title>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <header class="navigation" role="banner">
+      <h1><%= link_to 'Skákací hrady Jičín', '/' %></h1>
+      <nav role="navigation">
+        <ul id="js-navigation-menu" class="navigation-menu show">
+          <li class="nav-link"><a href="/">Nabídka</a></li>
+          <li class="nav-link"><a href="/#o-nas">O nás</a></li>
+          <li class="nav-link"><a href="/#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <%= yield %>
+
+    <%= stylesheet_link_tag :application %>
+    <%= javascript_include_tag :all %>
+  </body>
+</html>

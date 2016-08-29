@@ -10,11 +10,18 @@ body, html {
   height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  a, a:visited {
+    color: $color;
+    text-decoration: none;
+  }
+}
+
 article {
   margin-bottom: 3rem;
 }
 
-img {
+.preview img {
   width: 10rem;
   height: 10rem;
   object-fit: cover;

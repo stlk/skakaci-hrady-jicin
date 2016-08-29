@@ -1,0 +1,10 @@
+
+<article>
+  <h2><%= atrakce.name %></h2>
+  <p><%= atrakce.description %></p>
+  <div>
+    <% atrakce.photos.each do |photo| %>
+    <img src="<%= photo %>" />
+    <% end %>
+  </div>
+</article>
