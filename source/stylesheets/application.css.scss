@@ -21,10 +21,43 @@ article {
   margin-bottom: 3rem;
 }
 
-.preview img {
+.jumbo {
+  @media (min-width: $large-screen) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .preview {
+    width: 15rem;
+    order: 2;
+  }
+
+  * {
+    margin: 0 0.3rem;
+  }
+}
+
+.description {
+  @media (min-width: $large-screen) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-link {
+    order: 2;
+    display: block;
+    text-align: center;
+  }
+
+  * {
+    margin: 0 0.3rem;
+  }
+}
+
+.preview {
   width: 10rem;
-  height: 10rem;
-  object-fit: cover;
+  height: 100%;
 }
 
 .detail {
