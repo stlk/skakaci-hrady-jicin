@@ -60,7 +60,7 @@ $font-headings: null;
 @if $theme == Merriweather {
 
   // Import Merriweather
-  @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic&subset=latin-ext);
 
   // Set body font
   $font-body: Merriweather, Georgia, serif;
