@@ -2,6 +2,7 @@ require "rubygems"
 require "tmpdir"
 
 GITHUB_REPONAME = "stlk/skakaci-hrady-jicin"
+HOST = "skakaci-hrady-jicin.rousek.name"
 
 namespace :site do
 
@@ -12,6 +13,7 @@ namespace :site do
       cp_r "build/.", tmp
 
       Dir.chdir tmp
+      system "echo #{HOST} > CNAME"
       system "git init"
       system "git add ."
       message = "Site updated at #{Time.now.utc}"
