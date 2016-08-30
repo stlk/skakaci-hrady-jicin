@@ -7,6 +7,7 @@ namespace :site do
 
   desc "Generate and publish"
   task :publish do
+    system "bundle exec middleman build"
     Dir.mktmpdir do |tmp|
       cp_r "build/.", tmp
 
