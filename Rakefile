@@ -2,7 +2,7 @@ require "rubygems"
 require "tmpdir"
 
 GITHUB_REPONAME = "stlk/skakaci-hrady-jicin"
-HOST = "skakaci-hrady-jicin.rousek.name"
+HOST = "skakacihradyjicin.cz"
 
 namespace :site do
 
