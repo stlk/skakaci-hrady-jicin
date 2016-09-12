@@ -5,15 +5,15 @@ title: Skákací hrady Jičín
 <article class="jumbo">
   <img class="preview" src="http://www.atrakcereatek.cz/fotky22130/fotos/_vyr_991.jpg" />
   <div>
-    <h2>Velká skluzavka - k dispozici od září</h2>
+    <h2>Novinka - Velká skluzavka</h2>
     <p>
-      Připravujeme pro vás velkou skluzavku vhodnou na veřejné akce.<br />
+      Představujeme vám velkou skluzavku vhodnou na veřejné akce.<br />
       Parametry: 7 m délka, 4,5 m šířka a 6 m výška.
     </p>
   </div>
 </article>
 
-<% data.atrakce.each do |item| %>
+<% data.atrakce.select { |item| !item.hidden }.each do |item| %>
   <article>
     <h2><%= link_to item.name, "/atrakce/#{item.slug}" %></h2>
     <div class="description">

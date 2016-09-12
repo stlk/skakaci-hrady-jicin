@@ -1,20 +1,52 @@
+- slug: velka-skluzavka
+  name: Velká skluzavka
+  description: Připravujeme pro vás velkou skluzavku vhodnou na veřejné akce.
+  width: 4.5
+  depth: 7
+  height: 6
+  photos_slug: velka-skluzavka
+  pricelist: large
+  hidden: true
 - slug: skluzavka-s-lezeckou-stenou-a-tunelem
   name: Skluzavka s lezeckou stěnou a tunelem
-  description: Pořádná dětská párty si žádá velkou skluzavku! No ne? A aby se na řádění nestály dlouhé fronty, disponuje nafukovací skluzavka hned dvěma dráhami. Ale tím zábava nekončí. Součástí atrakce, která je určena pro 4 děti současně, je také lezecká stěna, skákací plocha a tunel. Pro bezpečí vašich dětí nechal výrobce namontovat ochranné sítě kolem skákací plochy a skluzavku opatřil vysokými bočnicemi.
+  description: |
+    Pořádná dětská párty si žádá velkou skluzavku! No ne? A aby se na řádění nestály dlouhé fronty, disponuje nafukovací skluzavka hned dvěma dráhami. Ale tím zábava nekončí. Součástí atrakce, která je určena pro 4 děti současně, je také lezecká stěna, skákací plocha a tunel.
+
+    Pro bezpečí vašich dětí nechal výrobce namontovat ochranné sítě kolem skákací plochy a skluzavku opatřil vysokými bočnicemi.
+  width: 2.4
+  depth: 6
+  height: 2.9
   photos_slug: dvojita
   pricelist: small
 - slug: hrad-s-balonky-trampolinou-a-skluzavkou
   name: Hrad s balónky, trampolínou a skluzavkou
-  description: Co na dětské oslavě překoná klauna i piňatu? Celodenní dovádění ve skákacím hradu, kterému neodolá ani tatínek. Tohle skákací království otevře své brány až 6 dětem současně. Čeká na ně celkem 13 atrakcí, které je zabaví rozhodně na celý den. Těm nejmenším udělá radost hrací koutek s míčky a malá skluzavka, pro děti školního věku je tu skluzavka velká, basketbalový koš a také lezecká stěna! Výrobce samozřejmě myslí i na bezpečí dětí, a proto je hrad zabezpečený ochrannými sítěmi.
+  description: |
+    Co na dětské oslavě překoná klauna i piňatu? Celodenní dovádění ve skákacím hradu, kterému neodolá ani tatínek. Tohle skákací království otevře své brány až 6 dětem současně. Čeká na ně celkem 13 atrakcí, které je zabaví rozhodně na celý den.
+
+    Těm nejmenším udělá radost hrací koutek s míčky a malá skluzavka, pro děti školního věku je tu skluzavka velká, basketbalový koš a také lezecká stěna! Výrobce samozřejmě myslí i na bezpečí dětí, a proto je hrad zabezpečený ochrannými sítěmi.
+  width: 3.2
+  depth: 4.9
+  height: 3
   photos_slug: hrad
   pricelist: small
 - slug: prekazkova-draha
   name: Překážková dráha
-  description: doplnit text - 13,5m2, 5,3m x 2,5m, vyska 2,2m
+  description:
+  width: 2.5
+  depth: 5.3
+  height: 2.2
   photos_slug: prekazkova
   pricelist: small
 - slug: trampolina-s-tocitou-skluzavkou-a-sipkami
   name: Trampolína s točitou skluzavkou a šipkami
-  description: doplnit text - nazev vyrobce PlayCentrum 11 v 1 + micky - 17m2, 4,5m x 3,8m, vyska 2,3m
+  description: |
+    Školní povinnosti stranou, proskákejte se k pořádné zábavě! Trampolína je jako stvořená pro malá i velká zlobidla.
+
+    Především ta malá neodolají dobrodružné točité skluzavce a neprobádaným tunelům. Děti společně také mohou zápolit v nejrůznějších hrách od házení míčků na terč až po míření na basketbalový koš. Celkem 11 atrakcí zabaví děti od tří do deseti let.
+
+    Nafukovací atrakce je určena pro maximálně šest dětí současně. Pro bezpečí vašich dětí nechal výrobce namontovat ochranné sítě kolem skákací plochy a skluzavku opatřil vysokými bočnicemi.
+  width: 3.8
+  depth: 4.5
+  height: 2.3
   photos_slug: tocita
   pricelist: small

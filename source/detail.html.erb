@@ -1,7 +1,13 @@
 
 <article class="detail">
   <h2><%= atrakce.name %></h2>
-  <p><%= atrakce.description %></p>
+  <%= simple_format(atrakce.description) %>
+  <h3>Rozměry</h3>
+  <p>
+    Šířka: <%= atrakce.width %> m<br />
+    Délka: <%= atrakce.length %> m<br />
+    Výška: <%= atrakce.height %> m<br />
+  </p>
 
   <a class="button" href="#order">Zjistit více</a>
 
@@ -11,20 +17,24 @@
     <% end %>
   </div>
 
+  <a id="order" />
   <%= partial "cenik_#{atrakce.pricelist}" %>
 </article>
 
 <section>
-  <h2 id="order">Objednávka</h2>
+  <h2>Objednávka</h2>
+  <p>
+    Kontaktujte nás na telefonu <strong>608 05 05 53</strong> nebo vyplňte formulář a my se vám ozveme.
+  </p>
   <%= partial "formular" %>
 </section>
 
 <section>
   <h2>Informace k pronájmu</h2>
   <ul>
-    <li>sazba za pronájem atrakce je počítána za jeden den do 18:00, případně dle domluvy</li>
-    <li>na místě seznámíme nájemce s obsluhou atrakce</li>
-    <li>věk nájemce musí být minimálně 18 let</li>
+    <li>možnost osobního odběru ve skladu v Jičíně, atrakce se pohodlně vejde do osobního vozu</li>
+    <li>sazba za pronájem atrakce je počítána za jeden den do 19:00, případně dle domluvy</li>
+    <li>Fukar musí být zapnut po celou dobu provozu atrakce - proud vzduchu ji tak udržuje trvale nafouknutou</li>
     <li>pro montáž atrakce je zapotřebí vhodná plocha pro provoz a ukotvení atrakce Tj. rovný terén a stálý přívod el. energie</li>
     <li>atrakce lze použít nejen v exteriéru, ale také v interiéru(tělocvičny, haly atd.)</li>
     <li>pronajímané atrakce mají všechny potřebné bezpečnostní certifikáty pro ČR a EU</li>
