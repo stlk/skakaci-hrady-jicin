@@ -2,18 +2,6 @@
 title: Skákací hrady Jičín
 ---
 
-<article>
-  <a class="jumbo" href="/atrakce/velka-skluzavka">
-    <img class="preview" src="<%= photos('velka-skluzavka').first %>" />
-    <div>
-      <h2>Novinka - Velká skluzavka</h2>
-      <p>
-        Uspořádejte akci pro rodiny s dětmi, na kterou se hodně dlouho nezapomene!<br />
-      </p>
-    </div>
-  </a>
-</article>
-
 <% data.atrakce.select { |item| !item.hidden }.each do |item| %>
   <article>
     <h2><%= link_to item.name, "/atrakce/#{item.slug}" %></h2>
