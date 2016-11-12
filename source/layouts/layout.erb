@@ -8,6 +8,7 @@
     <meta property="og:description" content="Jsme jičínská půjčovna zábavních nafukovacích atrakcí pro děti s možností dovozu. Nabízíme ty nejlepší atrakce oblíbené značky Happy Hop." />
     <meta property="og:image" content="http://skakacihradyjicin.cz/images/atrakce/velka-skluzavka_2.jpg" />
     <title><%= current_page.data.title || "Skákací hrady Jičín" %></title>
+    <%= stylesheet_link_tag :application %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -24,7 +25,6 @@
 
     <%= yield %>
 
-    <%= stylesheet_link_tag :application %>
     <%= javascript_include_tag :all %>
   </body>
 </html>
