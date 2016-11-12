@@ -6,13 +6,13 @@
 
 body, html {
   color: $color;
-  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   a, a:visited {
     color: $color;
     text-decoration: none;
+    transition: color .3s;
   }
 }
 
