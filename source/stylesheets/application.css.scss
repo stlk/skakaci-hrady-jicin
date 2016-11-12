@@ -2,7 +2,6 @@
 
 @import "variables";
 @import "navigation";
-@import "contact";
 
 
 body, html {
@@ -79,6 +78,18 @@ article {
     width: 12rem;
     text-decoration: none;
     text-align: center;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.2rem;
+    background: $action-color;
+    color: $color;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      background: darken($action-color, 5%);
+    }
 
     &:visited {
       color: $color;
