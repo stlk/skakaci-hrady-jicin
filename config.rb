@@ -39,6 +39,13 @@ helpers do
       i
     end
   end
+
+  def photos_small(slug)
+    Dir["source/images/atrakce/small/#{slug}_*"].map do |i|
+      i.slice! "source"
+      i
+    end
+  end
 end
 
 # Build-specific configuration
