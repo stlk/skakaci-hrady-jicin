@@ -34,6 +34,15 @@
   height: 3
   photos_slug: hrad
   pricelist: small
+- slug: velky-hrad-se-skluzavkou
+  name: Velký hrad se skluzavkou
+  description: |
+    Velice oblíbený model. Největší skákací hrad z produkce Happy Hop.
+  width: 4
+  depth: 5
+  height: 3
+  photos_slug: skakaci-hrad
+  pricelist: small
 - slug: prekazkova-draha
   name: Překážková dráha
   description:
