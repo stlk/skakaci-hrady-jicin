@@ -1,5 +1,6 @@
 - slug: velka-skluzavka
-  name: Velká skluzavka vhodná na obecní akce
+  name: Velká skluzavka vhodná na obecní a firemní
+  id: 10
   description: |
     Uspořádejte akci pro rodiny s dětmi, na kterou se hodně dlouho nezapomene! Hlavním důvodem bude přítomnost této velké nafukovací atrakce, která patří mezi špičkové a velmi vyhledávané produkty ve své kategorii.
 
@@ -13,6 +14,7 @@
   pricelist: large
 - slug: skluzavka-s-lezeckou-stenou-a-tunelem
   name: Skluzavka s lezeckou stěnou a tunelem
+  id: 1
   description: |
     Pořádná dětská párty si žádá velkou skluzavku! No ne? A aby se na řádění nestály dlouhé fronty, disponuje nafukovací skluzavka hned dvěma dráhami. Ale tím zábava nekončí. Součástí atrakce, která je určena pro 4 děti současně, je také lezecká stěna, skákací plocha a tunel.
 
@@ -24,6 +26,7 @@
   pricelist: small
 - slug: hrad-s-balonky-trampolinou-a-skluzavkou
   name: Hrad s balónky, trampolínou a skluzavkou
+  id: 2
   description: |
     Co na dětské oslavě překoná klauna i piňatu? Celodenní dovádění ve skákacím hradu, kterému neodolá ani tatínek. Tohle skákací království otevře své brány až 6 dětem současně. Čeká na ně celkem 13 atrakcí, které je zabaví rozhodně na celý den.
 
@@ -35,6 +38,7 @@
   pricelist: small
 - slug: velky-hrad-se-skluzavkou
   name: Velká skákací plocha se skluzavkou
+  id: 3
   description: |
     Tradiční a velmi oblíbená skákací atrakce na dětské oslavy. Děti skákání hned tak neomrzí, protože jej mohou prostřídat se skluzavkou. Design hradu probudí jejich fantazii a budou uvnitř něj prožívat fantastické příběhy.
 
@@ -48,6 +52,7 @@
   pricelist: small
 - slug: prekazkova-draha
   name: Překážková dráha
+  id: 4
   description: |
     Nikdy nekončící dobrodružství - s touto atrakcí čekají Vaše děti hodiny zábavy, ale také výzev v podobě několika překážek, které je bude bavit překonávat.
 
@@ -61,6 +66,7 @@
   pricelist: small
 - slug: trampolina-s-tocitou-skluzavkou-a-sipkami
   name: Trampolína s točitou skluzavkou a šipkami
+  id: 5
   description: |
     Školní povinnosti stranou, proskákejte se k pořádné zábavě! Trampolína je jako stvořená pro malá i velká zlobidla.
 

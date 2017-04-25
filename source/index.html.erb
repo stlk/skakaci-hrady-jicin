@@ -9,7 +9,10 @@ title: Skákací hrady Jičín
       <% link_to "/atrakce/#{item.slug}", class: "image-link" do %>
         <img class="preview" src="<%= photos_small(item.photos_slug).first %>" />
       <% end %>
-      <p><%= truncate_words(item.description) %></p>
+      <p>
+        <%= truncate_words(item.description) %>
+        <a href="<%= "/atrakce/#{item.slug}" %>">Zjistit více</a>
+      </p>
     </div>
   </article>
 <% end %>

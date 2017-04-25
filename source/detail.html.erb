@@ -1,6 +1,7 @@
 
 <article class="detail">
   <h2><%= atrakce.name %></h2>
+  <h3 class="order-number"><span>číslo pro objednávku:</span> <%= atrakce.id %></h3>
   <%= simple_format(atrakce.description) %>
   <h3>Rozměry</h3>
   <p>
@@ -9,7 +10,7 @@
     Výška: <%= atrakce.height %> m<br />
   </p>
 
-  <a class="button" href="#order">Zjistit více</a>
+  <a class="button" href="#order">Ceník</a>
 
   <div class="images">
     <% photos(atrakce.photos_slug).each do |photo| %>
@@ -24,7 +25,7 @@
 <section>
   <h2>Objednávka</h2>
   <p>
-    Kontaktujte nás na telefonu <strong>608 05 05 53</strong> nebo e-mailu <strong>jana@skakacihradyjicin.cz</strong>.
+    Kontaktujte nás na telefonu <strong>608 05 05 53</strong> nebo e-mailu <strong>jana@skakacihradyjicin.cz</strong>. Uveďte prosím číslo atrakce: <strong><%= atrakce.id %></strong>.
   </p>
 </section>
 

@@ -73,6 +73,14 @@ article {
     margin: inherit auto;
   }
 
+  .order-number {
+    color: #aaa;
+
+    span {
+      font-weight: lighter;
+    }
+  }
+
   .button {
     display: block;
     width: 12rem;
