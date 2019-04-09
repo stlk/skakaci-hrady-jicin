@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: web
+    command: rake site:publish
+    volumes:
+      - .:/app
+      - ~/.ssh/:/root/.ssh/
